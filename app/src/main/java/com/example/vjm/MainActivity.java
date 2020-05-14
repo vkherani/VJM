@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         viewPager = findViewById(R.id.viewPager);
 
         final List<SliderItem> sliderItems = new ArrayList<>();
@@ -30,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
 
         SliderAdapter adapter = new SliderAdapter(sliderItems,getApplicationContext(),viewPager);
         viewPager.setAdapter(adapter);
-        viewPager.setPadding(130,0,130,0);
         sliderHandler.removeCallbacks(sliderRunnable);
         sliderHandler.postDelayed(sliderRunnable,3000);
 
