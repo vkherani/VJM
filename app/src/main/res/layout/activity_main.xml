@@ -17,34 +17,27 @@
             android:id="@+id/bg_top_header"
             android:layout_width="match_parent"
             android:layout_height="230dp"
-            android:background="@drawable/ic_bg_topheader"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:background="@drawable/ic_bg_topheader" />
 
-        <TextView
+        <androidx.viewpager.widget.ViewPager
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="75dp"
-            android:fontFamily="@font/mo_li"
-            android:gravity="center"
-            android:text="Welcome To VJM"
-            android:textColor="#ffffff"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-
+            android:layout_height="230dp"
+            android:id="@+id/viewPager"
+            android:overScrollMode="never"
+            android:clipToPadding="false"/>
 
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="450dp"
-            android:layout_marginTop="180dp"
+            android:layout_marginTop="10dp"
             android:alignmentMode="alignMargins"
             android:columnCount="2"
             android:columnOrderPreserved="false"
             android:padding="14dp"
             android:rowCount="2"
             android:scrollbars="vertical"
-            android:id="@+id/gridLayout">
+            android:id="@+id/gridLayout"
+            android:layout_below="@id/viewPager">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
@@ -204,12 +197,6 @@
             </androidx.cardview.widget.CardView>
         </GridLayout>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Login"
-            android:layout_below="@id/gridLayout"
-            android:layout_centerHorizontal="true"/>
-    </RelativeLayout>
+      </RelativeLayout>
 </ScrollView>
 
