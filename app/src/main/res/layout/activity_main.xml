@@ -204,6 +204,7 @@
             android:layout_marginHorizontal="15dp"
             android:weightSum="2">
             <ImageButton
+                android:id="@+id/signinStudentBtn"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 android:layout_height="50dp"
@@ -216,6 +217,7 @@
                 android:gravity="center"
                 android:src="@drawable/login"/>
             <ImageButton
+                android:id="@+id/signupStudentBtn"
                 android:layout_width="wrap_content"
                 android:layout_weight="1"
                 android:layout_height="50dp"

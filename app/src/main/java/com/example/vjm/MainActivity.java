@@ -3,9 +3,12 @@ package com.example.vjm;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.transition.Slide;
+import android.view.View;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +16,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 //hello
 
+    ImageButton signinStudentBtn;
     ViewPager viewPager;
     Handler sliderHandler = new Handler();
     @Override
@@ -20,6 +24,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         viewPager = findViewById(R.id.viewPager);
+
+
+        signinStudentBtn = findViewById(R.id.signinStudentBtn);
+        signinStudentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),Login_Student.class);
+                startActivity(i);
+            }
+        });
+
 
         final List<SliderItem> sliderItems = new ArrayList<>();
         sliderItems.add(new SliderItem(R.drawable.first));
