@@ -16,7 +16,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 //hello
 
-    ImageButton signinStudentBtn;
+    ImageButton signinStudentBtn,signupStudentBtn;
     ViewPager viewPager;
     Handler sliderHandler = new Handler();
     @Override
@@ -27,10 +27,18 @@ public class MainActivity extends AppCompatActivity {
 
 
         signinStudentBtn = findViewById(R.id.signinStudentBtn);
+        signupStudentBtn = findViewById(R.id.signupStudentBtn);
         signinStudentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),Login_Student.class);
+                startActivity(i);
+            }
+        });
+        signupStudentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),SignUp_student.class);
                 startActivity(i);
             }
         });

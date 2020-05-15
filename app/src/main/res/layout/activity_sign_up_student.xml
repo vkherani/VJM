@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Student Sign-In"
+                android:text="Student Sign-Up"
                 android:textColor="#000"
                 android:fontFamily="@font/mo_re"
                 android:textStyle="bold"
@@ -38,10 +38,22 @@
                 android:textSize="30sp" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/enrollmentNo"
+                android:id="@+id/studentName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:startIconDrawable="@drawable/edittext_person"
+                app:startIconTint="#000"
+                android:hint="Full Name">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/enrollmentNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/edittext_id"
                 app:startIconTint="#000"
                 android:hint="Enrollment No / Email">
                 <com.google.android.material.textfield.TextInputEditText
@@ -53,15 +65,12 @@
                 android:id="@+id/studentPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:endIconMode="password_toggle"
-                app:startIconDrawable="@drawable/edittext_pass"
+                app:startIconDrawable="@drawable/edit_text_phone"
                 app:startIconTint="#000"
-                app:endIconTint="#000"
-                android:hint="Password">
+                android:hint="Mobile No">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"
                     />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,18 +82,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginHorizontal="10dp"
                 android:background="@drawable/btn_design"
-                android:text="Sign In"
-                android:textSize="24sp"
-                android:textColor="#fff"
-                />
-            <Button
-                android:id="@+id/signupStudentBtn"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginHorizontal="10dp"
-                android:background="@drawable/btn_design"
-                android:text="Sign Up"
+                android:text="Get Otp"
                 android:textSize="24sp"
                 android:textColor="#fff"
                 />
