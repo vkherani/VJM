@@ -214,6 +214,7 @@
                 android:layout_marginBottom="20dp"
                 android:textColor="#fff"
                 android:gravity="center"
+                android:id="@+id/btnLogin"
                 android:src="@drawable/login"/>
             <ImageButton
                 android:layout_width="wrap_content"
@@ -225,6 +226,7 @@
                 android:background="@drawable/btn_design"
                 android:textColor="#fff"
                 android:gravity="center"
+                android:id="@+id/btnRegi"
                 android:src="@drawable/ic_person_add_black_24dp"/>
         </LinearLayout>
       </RelativeLayout>
