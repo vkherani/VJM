@@ -7,24 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class SignUp_student extends AppCompatActivity {
+public class otp_student extends AppCompatActivity {
 
-    Button getOtpButton;
-
+    Button verifyOtpBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up_student);
-
-        getOtpButton = findViewById(R.id.getOtpButton);
-
-        getOtpButton.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_otp_student);
+        verifyOtpBtn = findViewById(R.id.verifyOtpBtn);
+        verifyOtpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), otp_student.class);
+                Intent i  = new Intent(getApplicationContext(),student_pass.class);
                 startActivity(i);
                 finish();
             }
         });
+
     }
 }
