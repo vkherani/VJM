@@ -6,6 +6,13 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">#000</item>
+        <item name="pinViewStyle">@style/PinWidget.PinView</item>
+        <item name="colorControlActivated">@color/texthintColor</item>
+        <item name="colorControlNormal">#000</item>
     </style>
 
+<!--    <style name="MyAppearance" parent="TextAppearance.AppCompat">-->
+<!--        <item name="android:textColor">@color/texthintColor</item>-->
+<!--    </style>-->
 </resources>
