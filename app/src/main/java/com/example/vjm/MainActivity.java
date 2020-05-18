@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     ViewPager viewPager;
     Handler sliderHandler = new Handler();
     ImageButton btnLogin,btnRegi;
-    CardView btnNotice;
+    CardView btnNotice,btnEvents;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,NoticeActivity.class));
+            }
+        });
+        btnEvents = findViewById(R.id.eventsBtn);
+        btnEvents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,EventsCategoryActivity.class));
             }
         });
 

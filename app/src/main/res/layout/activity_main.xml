@@ -83,7 +83,8 @@
                 android:layout_marginBottom="16dp"
                 android:background="@color/cardColor"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="6dp">
+                app:cardElevation="6dp"
+                android:id="@+id/eventsBtn">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
