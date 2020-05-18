@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     ViewPager viewPager;
     Handler sliderHandler = new Handler();
     ImageButton btnLogin,btnRegi;
-    CardView btnNotice,btnCourceDetail;
+    CardView btnNotice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,16 +52,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,SignUp_student.class));
             }
         });
-
-        btnCourceDetail = findViewById(R.id.btnCourceDetail);
-        btnCourceDetail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,Cource_Detail.class);
-                startActivity(i);
-            }
-        });
-
 
         final List<SliderItem> sliderItems = new ArrayList<>();
         sliderItems.add(new SliderItem(R.drawable.first));
