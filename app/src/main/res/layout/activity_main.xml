@@ -13,12 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <View
-            android:id="@+id/bg_top_header"
-            android:layout_width="match_parent"
-            android:layout_height="230dp"
-            android:background="@drawable/ic_bg_topheader" />
-
         <androidx.viewpager.widget.ViewPager
             android:layout_width="match_parent"
             android:layout_height="230dp"
@@ -49,7 +43,8 @@
                 android:layout_marginBottom="16dp"
                 android:background="@color/cardColor"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="6dp">
+                app:cardElevation="6dp"
+                android:id="@+id/noticeBtn">
 
                 <LinearLayout
                     android:layout_width="wrap_content"

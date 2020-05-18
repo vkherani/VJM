@@ -1,6 +1,7 @@
 package com.example.vjm;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
@@ -20,11 +21,20 @@ public class MainActivity extends AppCompatActivity {
     ViewPager viewPager;
     Handler sliderHandler = new Handler();
     ImageButton btnLogin,btnRegi;
+    CardView btnNotice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         viewPager = findViewById(R.id.viewPager);
+
+        btnNotice = findViewById(R.id.noticeBtn);
+        btnNotice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,NoticeActivity.class));
+            }
+        });
 
          btnLogin = findViewById(R.id.btnLogin);
          btnRegi = findViewById(R.id.btnRegi);
